@@ -4,7 +4,16 @@ import { CORE_CONCEPTS } from './data';
 import Header from './components/Header';
 import CoreConcept from './components/coreconcepts';
 import TabButton from './components/TabButtons';
+import {useState} from "react";
+
 function App() {
+  const [selectedTopic, setSelectedTopic] = useState('Please click a button');
+
+  function handleSelected(selectedButton){
+    setSelectedTopic(selectedButton)
+    console.log(`Hello World--is ${selectedTopic}`);
+
+  }
   return (
     <div>
       <Header></Header>
@@ -25,14 +34,14 @@ function App() {
         </section>
         <section id="examples">
           <h2>Examples</h2>
-          <menu><TabButton>Components</TabButton>
-          <TabButton>JSX</TabButton>
-          <TabButton>Props</TabButton>
-          <TabButton>State</TabButton></menu>
+          <menu><TabButton onSelect={()=>handleSelected('components')}>Components</TabButton>
+          <TabButton onSelect={()=>handleSelected('jsx')}>JSX</TabButton>
+          <TabButton onSelect={()=>handleSelected('props')}>Props</TabButton>
+          <TabButton onSelect={()=>handleSelected('state')}>State</TabButton></menu>
         </section>
-        <section id="core-concepts"></section>
-
-
+        <section id="core-concepts">
+          {selectedTopic}
+        </section>
       </main>
     </div>
   );
