@@ -6,25 +6,25 @@ import stateImg from './assets/state-mgmt.png';
 export const CORE_CONCEPTS = [
   {
     image: componentsImg,
-    title: 'Components',
+    title: 'KETA',
     description:
       'The core UI building block - compose the user interface by combining multiple components.',
   },
   {
     image: jsxImg,
-    title: 'JSX',
+    title: 'G1',
     description:
       'Return (potentially dynamic) HTML(ish) code to define the actual markup that will be rendered.',
   },
   {
     image: propsImg,
-    title: 'Props',
+    title: 'Visa/Visa extension',
     description:
       'Make components configurable (and therefore reusable) by passing input data to them.',
   },
   {
     image: stateImg,
-    title: 'State',
+    title: 'Flight/Ferry Tickets',
     description:
       'React-managed data which, when changed, causes the component to re-render & the UI to update.',
   },
@@ -32,7 +32,7 @@ export const CORE_CONCEPTS = [
 
 export const EXAMPLES = {
   components: {
-    title: 'Components',
+    title: 'KETA',
     description:
         'Components are the building blocks of React applications. A component is a self-contained module (HTML + optional CSS + JS) that renders some output.',
     code: `
@@ -41,7 +41,7 @@ function Welcome() {
 }`,
   },
   jsx: {
-    title: 'JSX',
+    title: 'G1',
     description:
         'JSX is a syntax extension to JavaScript. It is similar to a template language, but it has full power of JavaScript (e.g., it may output dynamic content).',
     code: `
@@ -51,7 +51,7 @@ function Welcome() {
 </div>`,
   },
   props: {
-    title: 'Props',
+    title: 'Visa/Visa extension',
     description:
         'Components accept arbitrary inputs called props. They are like function arguments.',
     code: `
@@ -60,7 +60,7 @@ function Welcome(props) {
 }`,
   },
   state: {
-    title: 'State',
+    title: 'Flight/Ferry tickets',
     description:
         'State allows React components to change their output over time in response to user actions, network responses, and anything else.',
     code: `

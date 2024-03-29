@@ -10,6 +10,8 @@ html {
 
   color: #ebe7ef;
   background: radial-gradient(#280a48, #20043d);
+  /*background-image: url("https://cdn.britannica.com/49/1949-004-8818300C/Flag-South-Korea.jpg");*/
+  /*background-position: right top;*/
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -147,4 +149,12 @@ main h2 {
 
 #tab-content code {
   font-size: 1rem;
+}
+
+/*#contacts{*/
+/*  padding: 1rem;*/
+
+/*}*/
+#contacts h2 {
+  text-align: left;
 }

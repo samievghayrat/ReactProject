@@ -10,11 +10,10 @@ export default function Header() {
   const descriptions = reactDescriptions[getRandomInt(2)];
   return <header>
     <img src={reactImage} alt="Stylized atom" />
-   <h1>React Essentials</h1>
+   <h1>TJK-Korea</h1>
 
     <p>
-      {descriptions} React concepts you will need for almost any app you are
-      going to build!
+      Out goal is to help foreigners to adapt in South Korae
     </p>
   </header>
 }
